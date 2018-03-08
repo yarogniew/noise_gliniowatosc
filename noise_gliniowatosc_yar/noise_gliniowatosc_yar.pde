@@ -34,3 +34,11 @@ void draw() {
   line(0, mouseY, width, n);
   //text("naciśnij przycisk myszki żeby zmazać", 20,20);
 }
+
+void keyPressed()  //save the framme when we press the letter s
+{
+  if (key == 's' || key =='S')
+  {
+    saveFrame("landscape-###.png");
+  }
+}
