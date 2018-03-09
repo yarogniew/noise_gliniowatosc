@@ -33,12 +33,17 @@ void draw() {
   line(mouseX, 0, n, height);
   line(0, mouseY, width, n);
   //text("naciśnij przycisk myszki żeby zmazać", 20,20);
+  
+  if (mouseButton == RIGHT) {
+    saveFrame("pictures/pic_####.png");
+        delay(100);}
+  
 }
 
 void keyPressed()  //save the framme when we press the letter s
 {
   if (key == 's' || key =='S')
   {
-    saveFrame("landscape-###.png");
+    saveFrame("pictures/pic_####.png");
   }
 }
